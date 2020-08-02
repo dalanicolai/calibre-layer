@@ -24,6 +24,11 @@
 See the [[https://github.com/chenyanming/calibredb.el][calibre.el documentation]].
 
 * Install
+  
+Recommended additional layers and packages:
+- [[https://develop.spacemacs.org/layers/+readers/pdf/README.html][pdf]] (layer)
+- [[https://elpa.gnu.org/packages/djvu.html][djvu]] (package)
+
 Clone the layer using
 
 #+BEGIN_SRC 
