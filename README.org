@@ -52,6 +52,7 @@ See the [[https://github.com/chenyanming/calibredb.el#keybindings][search keymap
 ** Additional keybindings
 | Key Binding | Description                   |
 |-------------+-------------------------------|
+| ~\~           | calibredb-search-live-filter  |
 | ~C-j~         | calibredb-show-next-entry     |
 | ~C-k~         | calibredb-show-previous-entry |
 | ~S-j~         | evil-scroll-page-down         |

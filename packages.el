@@ -61,29 +61,29 @@
         :bindings
         [mouse-3] #'calibredb-search-mouse
         (kbd "<RET>") #'calibredb-find-file
-        "?" 'calibredb-dispatch
-        "?" 'calibredb-dispatch
-        "a" 'calibredb-add
-        "A" 'calibredb-add-dir
-        "c" 'calibredb-clone
-        "d" 'calibredb-remove
-        "J" 'evil-scroll-page-down
+        "?" #'calibredb-dispatch
+        "?" #'calibredb-dispatch
+        "a" #'calibredb-add
+        "A" #'calibredb-add-dir
+        "c" #'calibredb-clone
+        "d" #'calibredb-remove
+        "J" #'evil-scroll-page-down
         "K" 'evil-scroll-page-up
-        "\C-j" 'calibredb-show-next-entry
-        "\C-k" 'calibredb-show-previous-entry
-        "l" 'calibredb-library-list
-        "n" 'calibredb-library-next
-        "p" 'calibredb-library-previous
-        "s" 'calibredb-set-metadata-dispatch
-        "S" 'calibredb-switch-library
-        "o" 'calibredb-find-file
-        "O" 'calibredb-find-file-other-frame
-        "v" 'calibredb-view
-        "V" 'calibredb-open-file-with-default-tool
-        "." 'calibredb-open-dired
-        "b" 'calibredb-catalog-bib-dispatch
-        "e" 'calibredb-export-dispatch
-        "r" 'calibredb-search-refresh-and-clear-filter
+        "\C-j" #'calibredb-show-next-entry
+        "\C-k" #'calibredb-show-previous-entry
+        "l" #'calibredb-library-list
+        "n" #'calibredb-library-next
+        "p" #'calibredb-library-previous
+        "s" #'calibredb-set-metadata-dispatch
+        "S" #'calibredb-switch-library
+        "o" #'calibredb-find-file
+        "O" #'calibredb-find-file-other-frame
+        "v" #'calibredb-view
+        "V" #'calibredb-open-file-with-default-tool
+        "." #'calibredb-open-dired
+        "b" #'calibredb-catalog-bib-dispatch
+        "e" #'calibredb-export-dispatch
+        "r" #'calibredb-search-refresh-and-clear-filter
         "R" #'calibredb-search-refresh-or-resume)
         "q" #'calibredb-search-quit
         "m" #'calibredb-mark-and-forward
