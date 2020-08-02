@@ -49,9 +49,9 @@
             calibredb-program "/usr/bin/calibredb"
             calibredb-library-alist '(("/mnt/4EEDC07F44412A81/Calibrebibliotheek"))
             calibredb-id-width 5)
-      (spacemacs/declare-prefix "ac" "calibre")
-      (spacemacs/set-leader-keys "acc" 'calibredb-find-counsel)
-      (spacemacs/set-leader-keys "acs" 'calibredb)
+      ;; (spacemacs/declare-prefix "ac" "calibre")
+      ;; (spacemacs/set-leader-keys "acc" 'calibredb-find-counsel)
+      ;; (spacemacs/set-leader-keys "acs" 'calibredb)
       )
     :config
     (progn
