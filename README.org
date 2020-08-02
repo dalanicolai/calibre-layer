@@ -13,27 +13,44 @@
 - [[#description][Description]]
   - [[#features][Features:]]
 - [[#install][Install]]
+  - [[#example][Example]]
 - [[#key-bindings][Key bindings]]
+  - [[#additional-keybindings][Additional keybindings]]
 
 * Description
   This layer adds support to use emacs as an alternative (extra powerful) Calibre front-end.
 
 ** Features:
-  - Autocomplete
-  - Lint
-  - Refactor
-  - ...
+See the [[https://github.com/chenyanming/calibredb.el][calibre.el documentation]].
 
 * Install
-To use this configuration layer, add it to your =~/.spacemacs=. You will need to
-add =calibre= to the existing =dotspacemacs-configuration-layers= list in this
-file.
+Clone the layer using
+
+#+BEGIN_SRC 
+  git clone https://github.com/dalanicolai/calibre-layer.git ~/.emacs.d/private/calibre
+#+END_SRC
+
+Subsequently add =calibre= to the existing =dotspacemacs-configuration-layers= list
+and define the [[https://github.com/chenyanming/calibredb.el#quick-start][required variables]] in your =~/.spacemacs= file.
+
+** Example
+#+BEGIN_SRC 
+     (calibre :variables
+              calibredb-root-dir "/mnt/4EEDC07F44412A81/Calibrebibliotheek")
+#+END_SRC
+
 
 * Key bindings
 
-| Key Binding | Description    |
-|-------------+----------------|
-| ~SPC x x x~ | Does thing01   |
+See the [[https://github.com/chenyanming/calibredb.el#keybindings][search keymap definition in the calibredb.el documentation]]
+  
+** Additional keybindings
+| Key Binding | Description                   |
+|-------------+-------------------------------|
+| ~C-j~         | calibredb-show-next-entry     |
+| ~C-k~         | calibredb-show-previous-entry |
+| ~S-j~         | evil-scroll-page-down         |
+| ~S-k~         | evil-scroll-page-up           |
 
 # Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
 # Examples:
