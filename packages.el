@@ -32,7 +32,7 @@
 (defconst calibre-packages
   '((calibredb :location (recipe
                              :fetcher github
-                             :repo "dalanicolai/calibre-layer"))))
+                             :repo "dalanicolai/calibredb.el"))))
 
 (defun calibre/init-calibredb ()
   (use-package calibredb
@@ -51,7 +51,8 @@
             calibredb-id-width 5)
       (spacemacs/declare-prefix "ac" "calibre")
       (spacemacs/set-leader-keys "acc" 'calibredb-find-counsel)
-      (spacemacs/set-leader-keys "acs" 'calibredb))
+      (spacemacs/set-leader-keys "acs" 'calibredb)
+      )
     :config
     (progn
       (evilified-state-evilify-map calibredb-search-mode-map
