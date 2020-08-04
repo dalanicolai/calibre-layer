@@ -55,6 +55,9 @@
       )
     :config
     (progn
+      (spacemacs/set-leader-keys-for-major-mode 'calibredb-search-mode
+        "sf" 'calibredb-fetch-and-set-metadata-by-author-and-title
+        "si" 'calibredb-fetch-and-set-metadata-by-isbn)
       (evilified-state-evilify-map calibredb-search-mode-map
         :mode calibredb-search-mode
         :eval-after-load calibredb-search
