@@ -69,7 +69,7 @@
         "a" #'calibredb-add
         "A" #'calibredb-add-dir
         "c" #'calibredb-clone
-        "d" #'calibredb-remove
+        "dd" #'calibredb-remove
         "J" #'evil-scroll-page-down
         "K" 'evil-scroll-page-up
         "\C-j" #'calibredb-show-next-entry
