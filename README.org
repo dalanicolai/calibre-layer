@@ -16,6 +16,7 @@
   - [[#example][Example]]
 - [[#key-bindings][Key bindings]]
   - [[#additional-keybindings][Additional keybindings]]
+  - [[#modified-keybindings][Modified keybindings]]
 
 * Description
   This layer adds support to use emacs as an alternative (extra powerful) Calibre front-end.
@@ -50,13 +51,20 @@ and define the [[https://github.com/chenyanming/calibredb.el#quick-start][requir
 See the [[https://github.com/chenyanming/calibredb.el#keybindings][search keymap definition in the calibredb.el documentation]]
   
 ** Additional keybindings
-| Key Binding | Description                   |
-|-------------+-------------------------------|
-| ~\~           | calibredb-search-live-filter  |
-| ~C-j~         | calibredb-show-next-entry     |
-| ~C-k~         | calibredb-show-previous-entry |
-| ~S-j~         | evil-scroll-page-down         |
-| ~S-k~         | evil-scroll-page-up           |
+| Key Binding | Description                                          |
+|-------------+------------------------------------------------------|
+| ~\~           | calibredb-search-live-filter                         |
+| ~C-j~         | calibredb-show-next-entry                            |
+| ~C-k~         | calibredb-show-previous-entry                        |
+| ~S-j~         | evil-scroll-page-down                                |
+| ~S-k~         | evil-scroll-page-up                                  |
+| ~(,) s f~    | calibredb-fetch-and-set-metadata-by-author-and-title |
+| ~C-u , s f~   | idem, but swap author title for initial input        |
+| ~(,) s i~     | calibredb-fetch-and-set-metadata-by-isbn             |
+| ~C-u , s i~   | idem, but use title as initial input                 |
+** Modified keybindings
+| New | Old |                       |
+| ~dd~  | ~d~   | calibre-remove (file) |
 
 # Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
 # Examples:
