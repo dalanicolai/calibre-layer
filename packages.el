@@ -32,7 +32,10 @@
 (defconst calibre-packages
   '((calibredb :location (recipe
                              :fetcher github
-                             :repo "dalanicolai/calibredb.el"))))
+                             :repo "chenyanming/calibredb.el"
+                             :branch "develop"
+                             ))))
+                             ;; :repo "dalanicolai/calibredb.el"))))
 
 (defun calibre/init-calibredb ()
   (use-package calibredb
@@ -55,6 +58,7 @@
       )
     :config
     (progn
+      ;; (spacemacs/declare-prefix-for-mode 'calibredb-search-mode "s" "fetch-metadata" "fetch-metadata")
       (spacemacs/set-leader-keys-for-major-mode 'calibredb-search-mode
         "sf" 'calibredb-fetch-and-set-metadata-by-author-and-title
         "si" 'calibredb-fetch-and-set-metadata-by-isbn)
@@ -87,7 +91,7 @@
         "b" #'calibredb-catalog-bib-dispatch
         "e" #'calibredb-export-dispatch
         "r" #'calibredb-search-refresh-and-clear-filter
-        "R" #'calibredb-search-refresh-or-resume)
+        "R" #'calibredb-search-refresh-or-resume
         "q" #'calibredb-search-quit
         "m" #'calibredb-mark-and-forward
         "f" #'calibredb-toggle-favorite-at-point
@@ -104,4 +108,5 @@
         "\M-t" #'calibredb-set-metadata--tags
         "\M-a" #'calibredb-set-metadata--author_sort
         "\M-T" #'calibredb-set-metadata--title
-        "\M-c" #'calibredb-set-metadata--comments)))
+        "\M-c" #'calibredb-set-metadata--comments)
+    (transient-bind-q-to-quit))))
