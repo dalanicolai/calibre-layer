@@ -33,7 +33,7 @@
   '((calibredb :location (recipe
                              :fetcher github
                              :repo "chenyanming/calibredb.el"
-                             :branch "develop"
+                             ;; :branch "develop"
                              ))))
                              ;; :repo "dalanicolai/calibredb.el"))))
 
@@ -67,7 +67,7 @@
         :eval-after-load calibredb-search
         :bindings
         [mouse-3] #'calibredb-search-mouse
-        (kbd "<RET>") #'calibredb-find-file
+        (kbd "<RET>") #'spacemacs/calibredb-find-file
         "?" #'calibredb-dispatch
         "?" #'calibredb-dispatch
         "a" #'calibredb-add
@@ -108,5 +108,4 @@
         "\M-t" #'calibredb-set-metadata--tags
         "\M-a" #'calibredb-set-metadata--author_sort
         "\M-T" #'calibredb-set-metadata--title
-        "\M-c" #'calibredb-set-metadata--comments)
-    (transient-bind-q-to-quit))))
+        "\M-c" #'calibredb-set-metadata--comments))))
